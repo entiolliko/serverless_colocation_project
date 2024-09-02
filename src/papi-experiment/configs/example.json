@@ -1,0 +1,145 @@
+{
+    "environments": [
+        {
+            "papi_events": ["PAPI_FP_INS", "PAPI_TOT_INS", "PAPI_BR_MSP", "PAPI_BR_INS", "PAPI_L1_DCA", "PAPI_L1_TCA", "PAPI_VEC_INS"],
+            "experiment_repetition": 5,
+            "num_of_funs": 100,
+            "group_size": 25,
+            "sample_run_repetitions": 5,
+            "file_name": "save_default",
+            "feature_type": "DEFAULT",
+            "experiment":[
+                {
+                    "plot_title": "Random",
+                    "type": "random"
+                },
+                {
+                    "plot_title": "Standardization",
+                    "type": "standardization"
+                },
+                {
+                    "plot_title": "PCA - 5",
+                    "type": "pca",
+                    "n_components": 5
+                },
+                {
+                    "plot_title": "PCA - 6",
+                    "type": "pca",
+                    "n_components": 6
+                },
+                {
+                    "plot_title": "PCA - -1",
+                    "type": "pca",
+                    "n_components": -1
+                }
+            ]
+        },
+        {
+            "papi_events": ["PAPI_FP_INS", "PAPI_TOT_INS", "PAPI_BR_MSP", "PAPI_BR_INS", "PAPI_L1_DCA", "PAPI_L1_TCA", "PAPI_VEC_INS"],
+            "experiment_repetition": 5,
+            "num_of_funs": 100,
+            "group_size": 25,
+            "sample_run_repetitions": 5,
+            "file_name": "save_config_1",
+            "feature_type": "CONFIG_1",
+            "experiment":[
+                {
+                    "plot_title": "Random",
+                    "type": "random"
+                },
+                {
+                    "plot_title": "Standardization",
+                    "type": "standardization"
+                },
+                {
+                    "plot_title": "Min Max",
+                    "type": "min_max_normalization"
+                }
+            ]
+        },
+        {
+            "papi_events": ["PAPI_FP_INS", "PAPI_TOT_INS", "PAPI_BR_MSP", "PAPI_BR_INS", "PAPI_L1_DCA", "PAPI_L1_TCA", "PAPI_VEC_INS"],
+            "experiment_repetition": 5,
+            "num_of_funs": 100,
+            "group_size": 25,
+            "sample_run_repetitions": 5,
+            "file_name": "save_config_2",
+            "feature_type": "CONFIG_2",
+            "experiment":[
+                {
+                    "plot_title": "Random",
+                    "type": "random"
+                },
+                {
+                    "plot_title": "Standardization",
+                    "type": "standardization"
+                },
+                {
+                    "plot_title": "Min Max",
+                    "type": "min_max_normalization"
+                }
+            ]
+        },
+        {
+            "papi_events": ["PAPI_FP_INS", "PAPI_TOT_INS", "PAPI_BR_MSP", "PAPI_BR_INS", "PAPI_L1_DCA", "PAPI_L1_TCA", "PAPI_VEC_INS"],
+            "experiment_repetition": 5,
+            "num_of_funs": 100,
+            "group_size": 25,
+            "sample_run_repetitions": 5,
+            "file_name": "save_config_3",
+            "feature_type": "CONFIG_3",
+            "experiment":[
+                {
+                    "plot_title": "Random",
+                    "type": "random"
+                },
+                {
+                    "plot_title": "Standardization",
+                    "type": "standardization"
+                },
+                {
+                    "plot_title": "Min Max",
+                    "type": "min_max_normalization"
+                },
+                {
+                    "plot_title": "PCA - 2",
+                    "type": "pca",
+                    "n_components": 2
+                }
+            ]
+        },
+        {
+            "papi_events": ["PAPI_FP_INS", "PAPI_TOT_INS", "PAPI_BR_MSP", "PAPI_BR_INS", "PAPI_L1_DCA", "PAPI_L1_TCA", "PAPI_VEC_INS"],
+            "experiment_repetition": 5,
+            "num_of_funs": 100,
+            "group_size": 25,
+            "sample_run_repetitions": 5,
+            "file_name": "save_config_4",
+            "feature_type": "CONFIG_4",
+            "experiment":[
+                {
+                    "plot_title": "Random",
+                    "type": "random"
+                },
+                {
+                    "plot_title": "Standardization",
+                    "type": "standardization"
+                },
+                {
+                    "plot_title": "Min Max",
+                    "type": "min_max_normalization"
+                },
+                {
+                    "plot_title": "PCA - 2",
+                    "type": "pca",
+                    "n_components": 2
+                },
+                {
+                    "plot_title": "PCA - 3",
+                    "type": "pca",
+                    "n_components": 3
+                }
+            ]
+        }
+    ]
+}

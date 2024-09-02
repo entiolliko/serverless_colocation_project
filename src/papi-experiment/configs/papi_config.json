@@ -1,0 +1,12 @@
+{
+    "benchmark": {
+        "repetitions": 3, 
+        "disable_gc": true, 
+        "papi": {
+            "overflow_instruction_granularity": true, 
+            "overflow_buffer_size": true
+        }, 
+        "name": "data"
+    }, 
+    "input": {}
+}

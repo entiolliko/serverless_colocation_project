@@ -1,0 +1,87 @@
+********** BRANCH COUNTERS ********** 
+1. PAPI_BR_INS (Branch Instructions): 
+   - Counts the number of branch instructions executed. These are instructions that cause the program to potentially change its execution flow (e.g., if statements, loops).
+
+2. PAPI_BR_MSP (Mispredicted Branches): 
+   - Counts the number of branch instructions that were mispredicted. Branch prediction is a CPU feature that attempts to guess the direction of a branch (taken or not taken). A misprediction means the guess was wrong, causing a performance penalty.
+
+3. PAPI_BR_TKN (Taken Branches): 
+   - Counts the number of branch instructions that were taken. A branch is "taken" when the program's execution path changes as a result of a branch instruction.
+
+
+********** FLOATING POINT COUNTERS **********
+4. PAPI_DP_OPS (Double Precision Operations): 
+   - Counts the number of double-precision floating-point operations (usually 64-bit) executed. This is important for performance analysis in scientific computing, where double precision is commonly used.
+
+5. PAPI_FAD_INS (Floating-Point Add Instructions): 
+   - Counts the number of floating-point addition instructions executed. Floating-point operations are common in tasks like graphics processing and scientific calculations.
+
+6. PAPI_FDV_INS (Floating-Point Divide Instructions): 
+   - Counts the number of floating-point division instructions executed. These operations are generally more expensive in terms of CPU cycles compared to additions or multiplications.
+
+7. PAPI_FML_INS (Floating-Point Multiply Instructions): 
+   - Counts the number of floating-point multiplication instructions executed.
+
+8. PAPI_FP_INS (Floating-Point Instructions): 
+   - Counts the total number of floating-point instructions executed, including addition, subtraction, multiplication, division, and other operations.
+
+9. PAPI_FP_OPS (Floating-Point Operations): 
+   - Similar to PAPI_FP_INS, but counts the actual floating-point operations performed, which may include combined instructions or specific implementations in the CPU.
+
+10. PAPI_FSQ_INS (Floating-Point Square Root Instructions): 
+    - Counts the number of floating-point square root instructions executed. These are often computationally expensive operations.
+
+
+********** L1 CACHE COUNTERS **********
+11. PAPI_L1_DCA (L1 Data Cache Accesses): 
+    - Counts the number of accesses to the L1 data cache. This measures how frequently the CPU accesses the L1 cache for data, which is critical for performance as the L1 cache is the fastest memory available to the CPU.
+
+12. PAPI_L1_ICA (L1 Instruction Cache Accesses): 
+    - Counts the number of accesses to the L1 instruction cache. This measures how often the CPU fetches instructions from the L1 cache.
+
+13. PAPI_L1_ICH (L1 Instruction Cache Hits): 
+    - Counts the number of hits in the L1 instruction cache, where the instruction requested by the CPU is found in the L1 cache, resulting in faster access.
+
+14. PAPI_L1_ICM (L1 Instruction Cache Misses): 
+    - Counts the number of misses in the L1 instruction cache, where the requested instruction is not found in the L1 cache and must be fetched from a slower level of the memory hierarchy.
+
+15. PAPI_L1_ICR (L1 Instruction Cache Reads): 
+    - Counts the number of reads from the L1 instruction cache.
+
+16. PAPI_L1_TCA (L1 Total Cache Accesses): 
+    - Counts the total number of accesses to the L1 cache (both data and instruction caches combined).
+
+
+********** L2 CACHE COUNTERS **********
+17. PAPI_L2_ICA (L2 Instruction Cache Accesses): 
+    - Counts the number of accesses to the L2 instruction cache. The L2 cache is slower than L1 but larger and can store more instructions.
+
+
+********** SINGLE PRECISION COUNTERS **********
+18. PAPI_SP_OPS (Single Precision Operations): 
+    - Counts the number of single-precision floating-point operations (usually 32-bit) executed. Single precision is often used when lower precision is sufficient, saving memory and increasing speed.
+
+
+********** CYCLES COUNTERS **********
+19. PAPI_STL_ICY (Stalled Cycles for Instruction Cache): 
+    - Counts the number of CPU cycles where instruction fetches were stalled due to instruction cache issues, such as cache misses.
+
+
+********** TLB COUNTERS **********
+20. PAPI_TLB_DM (Data Translation Lookaside Buffer Misses): 
+    - Counts the number of misses in the Data Translation Lookaside Buffer (DTLB), which is a cache used by the CPU's memory management unit to speed up virtual-to-physical address translation for data accesses.
+
+21. PAPI_TLB_IM (Instruction Translation Lookaside Buffer Misses): 
+    - Counts the number of misses in the Instruction Translation Lookaside Buffer (ITLB), which is used for address translation of instruction fetches.
+
+
+********** OTHER COUNTERS **********
+22. PAPI_TOT_CYC (Total Cycles): 
+    - Counts the total number of CPU cycles. This is a general measure of the time spent executing the program, depending on the CPU's clock speed.
+
+23. PAPI_TOT_INS (Total Instructions): 
+    - Counts the total number of instructions executed by the CPU. This is a basic measure of the program's computational workload.
+
+24. PAPI_VEC_INS (Vector/SIMD Instructions): 
+    - Counts the number of vector or SIMD (Single Instruction, Multiple Data) instructions executed. These instructions process multiple data points in parallel, which is important for optimizing performance in tasks like graphics processing or scientific simulations.
+
