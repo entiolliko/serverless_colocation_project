@@ -1,16 +1,40 @@
-README
+# README
 
-Instructions:
-python install.py
-. python-venv/bin/activate
-This should create the penv in the project which you can use to run the  
+## Setup Instructions
 
-To run the code for the config in src/papi-experiment/config you can use the following command:
-sudo python-venv/bin/python src/papi-experiment/papi_experiment.py 
-This will generate the graphs as per the experiments specified in the config file.
+1. Install the required dependencies:
+   ```bash
+   python install.py
+   ```
 
-NOTE: 
-1. If you want to use the features Config_1/2/3/4 as discussed with Lucas you shouldn't change the list and order of the papi counters in the configu file. If you want to try other PAPI counters use DEFAULT as the feature type.   
-2. Make sure your pc is able to collect the papi counters you want to use
-3. The papi-experiment directory does not create the dataset on disk. If you want to save the dataset on disk as individual python files use the following command:
-python src/benchmark_generator/data_generator.py
+2. Activate the virtual environment:
+   ```bash
+   . python-venv/bin/activate
+   ```
+   This will create and activate the virtual environment (`penv`) in the project, which you can use to run the code.
+
+## Running the Experiment
+
+To execute the code using the configuration located in `src/papi-experiment/config`, use the following command:
+
+```bash
+sudo python-venv/bin/python src/papi-experiment/papi_experiment.py
+```
+
+This command will generate graphs based on the experiments specified in the configuration file.
+
+## Notes
+
+1. **Feature Configuration**:
+   - If you want to use the `Config_1/2/3/4` features (as discussed with Lucas), **do not change** the list or order of the PAPI counters in the configuration file.
+   - If you want to experiment with other PAPI counters, set the feature type to `DEFAULT`.
+
+2. **PAPI Counters**:
+   - Ensure that your machine is capable of collecting the PAPI counters you intend to use.
+
+3. **Saving Datasets**:
+   - The `papi-experiment` directory does **not** save the dataset on disk by default.
+   - If you want to save the dataset as individual Python files, use the following command:
+     ```bash
+     python src/benchmark_generator/data_generator.py
+     ```
