@@ -44,5 +44,6 @@ def generate_configs(path_to_file, folder_name):
         counter += 1
                                 
 if __name__ == "__main__":
+    curr_time = datetime.datetime.now()
     path_to_file = "temp/temp_file.npy"
-    generate_configs(path_to_file, sys.argv[1])
+    generate_configs(path_to_file, curr_time)

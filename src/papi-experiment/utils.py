@@ -33,7 +33,7 @@ def generate_input(size):
         config["workload"]["type"] = "float32"
         config["workload"]["iterations"] = workload_iterations
         config["workload"]["operator"] = workload_operator
-        config["network"]["use"] = workload_operator  = random.choice([False, True])
+        config["network"]["use"] = workload_operator = False #random.choice([False, True])
                     
         res.append({"ID":i, "config": config})
 
